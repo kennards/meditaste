@@ -4,8 +4,19 @@
     text-decoration: none;
     list-style: none;
 }
+@font-face{
+font-family:"Bebas Neue";
+src:url("fonts/BebasNeue.ttf");
+src:
+url("fonts/BebasNeue.ttf")format("truetype");
+font-family:"alex brush";
+src:url("fonts/AlexBrush.ttf");
+src:
+url("fonts/AlexBrush.ttf")format("truetype");
+}
+
 body{
-    background-image: url(../img/final/background.png);
+    background-image: url(../img/final/background-min.png);
 }
 header nav{
     display: flex;
@@ -32,7 +43,11 @@ header ul li a{
     color: #171717;
     text-shadow: 0px 1.2px #FCDDA3 ;
     font-size: 1.8rem;
-
+}
+header ul li a:hover{
+    color: #FCDDA3;
+    text-shadow: 0 1.2px #171717;
+    transition: 0.3s;
 }
 .logo{
     margin-left: 1rem;
@@ -94,6 +109,7 @@ header ul li a{
     border: none;
     background-color: #FCDDA3;
     margin-right: 1rem;
+    box-shadow: 2px 3px 1px #171717;
 }
 .mainpage .icon{
     padding-right: 1rem;
@@ -109,11 +125,17 @@ header ul li a{
     border-radius: 25px;
     border: none;
     background-color: #FCDDA3;
+    box-shadow: 2px 3px 1px #171717;
+}
+.btn:hover, .btn2:hover{
+    background-color: rgb(187, 165, 125);
+    color: rgb(43, 38, 33);
+    box-shadow: 2px 3px 1px rgb(49, 46, 40);
 }
 .women{
     order: 2;
     justify-content: center;
-    background-image: url("../img/final/women.png");
+    background-image: url("../img/final/women-min.png");
     flex-basis: 50%;
     background-repeat: no-repeat;
     background-size: cover;
